@@ -3,7 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Project</title>
+    <title>Pricing Component</title>
+
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 
     <!-- Sytlesheets -->
     <link rel="stylesheet" href="./css/normalize.css">
@@ -11,7 +16,64 @@
 </head>
 <body>
 
+    <main class="main-content">
+        <div class="page container">
+            <h1 class="page-title">Our Pricing</h1>
+            <div style="margin-bottom: 64px;">Switch</div>
 
+
+            <!-- Prising -->
+            <section class="prising">
+                <h2 class="visually-hidden">Prising</h2>
+                <div class="prising-content">
+                    <section class="prising-plan">
+                        <h3 class="plan-title">Basic</h3>
+                        <div class="plan-prise">
+                            <span class="plan-currency">$</span>
+                            19.99
+                        </div>
+                        <ul class="plan-features">
+                            <li class="plan-feature">500 GB Storage</li>
+                            <li class="plan-feature">2 Users Allowed</li>
+                            <li class="plan-feature">Send up to 3 GB</li>
+                        </ul>
+                        <a class="global-button button-primary" href="#">LEARN MORE</a>
+                    </section>
+
+
+                    <section class="prising-plan prising-plan-primary">
+                        <h3 class="plan-title">Professional</h3>
+                        <div class="plan-prise">
+                            <span class="plan-currency">$</span>
+                            24.99
+                        </div>
+                        <ul class="plan-features">
+                            <li class="plan-feature">1 TB Storage</li>
+                            <li class="plan-feature">5 Users Allowed</li>
+                            <li class="plan-feature">Send up to 10 GB</li>
+                        </ul>
+                        <a class="global-button button-white" href="#">LEARN MORE</a>
+                    </section>
+
+
+                    <section class="prising-plan">
+                        <h3 class="plan-title">Master</h3>
+                        <div class="plan-prise">
+                            <span class="plan-currency">$</span>
+                            39.99
+                        </div>
+                        <ul class="plan-features">
+                            <li class="plan-feature">2 TB Storage</li>
+                            <li class="plan-feature">10 Users Allowed</li>
+                            <li class="plan-feature">Send up to 20 GB</li>
+                        </ul>
+                        <a class="global-button button-primary" href="#">LEARN MORE</a>
+                    </section>
+                </div>
+            </section>
+            <!-- //Prising -->
+        </div>
+    </main>
 
     <script src="./js/main.js"></script>
 </body>

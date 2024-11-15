@@ -1,3 +1,16 @@
+/* CUSTOM PROPERTYS */
+:root {
+    --site-bg-color: #f7f7fe;
+    --text-color: #6e728e;
+    --purple-text-color: #6d72de;
+    --title-color: #4a4d60;
+    --card-bg-color: #fff;
+    --first-gradient-color: #a2a7f0;
+    --second-gradient-color: #696edd;
+}
+
+
+
 /* GLOBAL STYLES */
 html {
     height: 100%;
@@ -17,11 +30,15 @@ body {
     height: 100%;
     margin: 0;
     padding: 0;
-    font-family: "Arial", sans-serif;
-    font-style: 16px;
-    line-height: 1.5;
-    background-color: #fff;
-    color: #222;
+    font-family: "Montserrat", "Arial", sans-serif;
+    font-weight: bold;
+    font-style: 15px;
+    line-height: 28px;
+    background-color: var(--site-bg-color);
+    background-image: url(../img/bg-img-2.svg), url(../img/bg-img.svg) ;
+    background-repeat: no-repeat;
+    background-position: left -120px bottom -460px, right -97px top -103px;
+    color: var(--text-color);
 }
 
 img {
@@ -40,13 +57,45 @@ ul {
     margin: 0;
 }
 
+/* button */
+.global-button {
+    display: block;
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 13px;
+    line-height: 16px;
+    padding: 13px;
+    border: 1px solid transparent;
+    border-radius: 6px;
+    letter-spacing: 1.5px;
+}
+.button-primary {
+    background-color: var(--second-gradient-color);
+    background-image: linear-gradient(135deg, var(--first-gradient-color) -0.05%, var(--second-gradient-color)100.05%);
+}
+.button-primary:hover {
+    background-image: none;
+    background-color: #fff;
+    color: #6d72de;
+    border: 1px solid #6d72de;
+}
+.button-white {
+    background-color: #fff;
+    color: var(--purple-text-color);
+}
+.button-white:hover {
+    color: #fff;
+    background-color: transparent;
+    border-color: #fff;
+}
+
 
 /* CONTAINER */
 .container{
     width: 100%;
-    max-width: 1200px;
-    padding-left: 50px;
-    padding-right: 50px;
+    max-width: 1100px;
+    padding-left: 25px;
+    padding-right: 25px;
     margin-left: auto;
     margin-right: auto;
 }
@@ -55,6 +104,107 @@ ul {
 .main-content{
     flex-grow: 1;
 }
+
+/* PAGE */
+.page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 70px;
+    padding-bottom: 70px;
+}
+.page-title {
+    margin-top: 0;
+    margin-bottom: 40px;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 39px;
+    color: var(--text-color);
+}
+.prising {
+    width: 100%;
+}
+.prising-content {
+    display: flex;
+    align-items: center;
+}
+.prising-plan {
+    flex-grow: 1;
+    max-width: 350px;
+    padding: 32px;
+    text-align: center;
+    background-color: var(--card-bg-color);
+}
+.prising-plan:first-child{
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+.prising-plan:last-child{
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+
+.prising-plan-primary {
+    padding-top: 55px;
+    padding-bottom: 55px;
+    border-radius: 10px;
+    background-color: var(--second-gradient-color);
+    background-image: linear-gradient(135deg, var(--first-gradient-color) -0.05%, var(--second-gradient-color)100.05%);
+    color: #fff ;
+}
+.prising-plan-primary .plan-prise {
+    color: #fff;
+}
+.prising-plan-primary .plan-feature {
+    padding: 12px;
+    border-top: 1px solid rgb(255, 255, 255, 0.25);;
+}
+.prising-plan-primary .plan-feature:last-child {
+    border-bottom: 1px solid rgb(255, 255, 255, 0.25);
+}
+
+
+
+.plan-title {
+    margin-top: 0;
+    margin-bottom: 24px;
+    font-size: 18px;
+    line-height: 28px;
+}
+.plan-prise {
+    margin-top: 0;
+    margin-bottom: 32px;
+    font-size: 72px;
+    line-height: 72px;
+    font-weight: 700;
+    letter-spacing: -2px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--title-color);
+}
+.plan-currency {
+    font-size: 40px;
+    line-height: 48px;
+    margin-right: 11px;
+
+}
+.plan-features {
+    margin-bottom: 32px;
+}
+.plan-feature {
+    padding: 12px;
+    border-top: 1px solid rgb(110, 114, 142, 0.25);
+}
+.plan-feature:last-child {
+    border-bottom: 1px solid rgb(110, 114, 142, 0.25);
+}
+
+
+
+
+/* //PAGE */
 
 
 
